@@ -207,7 +207,7 @@ export class SliderComponent implements OnInit {
     }
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
     // Don't set the value over the initial options, because it will alway
     // be reset. This option seems to be a little buggy.
     let value = undefined;
